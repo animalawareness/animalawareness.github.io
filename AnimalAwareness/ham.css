@@ -1,0 +1,173 @@
+
+/* ---------------------------------------------for hamburger css-------------------------- */
+/* for the circle */
+.navigation_btn{
+    /* width:50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center; */
+    
+
+
+    /* position of the lines and circle */
+    position: absolute;
+    top: 3%;
+    left: 8%;
+    cursor: pointer;
+    
+
+
+    /* sent to front */
+    z-index: 20000;
+
+}
+
+
+/* for background in back */
+.nav_bg{
+    background-color: rgba(0, 0, 0, 0.918);
+    /* sent to back */
+    z-index: 15000;
+    transition: all 0.5s;
+    position: fixed;
+}
+
+
+/* for the 3 lines */
+.navigation_icon{
+    position: absolute;
+    margin-top: 20px;
+}
+
+/* 3 lines */
+.navigation_icon,
+.navigation_icon::before,
+.navigation_icon::after{
+    width: 30px;
+    height: 3px;
+    background-color:#2F8B43;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+
+
+
+/* center line */
+.navigation_icon{
+    width: 20px;
+}
+
+.navigation_icon::before,
+.navigation_icon::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.5s;
+}
+
+
+.navigation_icon::before{
+    top: -10px;
+}
+
+
+.navigation_icon::after{
+    top: 10px;
+}
+
+
+/* 3 lines hover */
+.navigation_btn:hover    .navigation_icon::before{
+        left: -10px;
+}
+
+.navigation_btn:hover    .navigation_icon::after{
+    left: 10px;
+}
+
+
+
+.navigation_checkbox{
+    display: none;
+}
+
+
+
+/* menu navbar code */
+.nav_list{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50% );
+    list-style: none;   
+    text-align: center;
+    width: 100%;
+}
+
+/* hidden text */
+.nav{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    z-index: 15000;
+    transition: all 0.5s;
+}
+
+.nav_link{
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font-family: 'Caveat Brush', cursive;
+    transition: all .8s;
+}
+
+.nav_link:hover{
+    color: #2F8B43;
+    transform: translateX(-10px);
+}
+
+
+/* for clickable humburger */
+.navigation_checkbox:checked ~ .nav {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+
+.navigation_checkbox:checked ~ .nav_bg {
+    transform: scale(3);
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FOR X EXIT */
+.navigation_checkbox:checked ~ .navigation_btn .navigation_icon{
+    background-color: transparent;
+} 
+
+.navigation_checkbox:checked ~ .navigation_btn .navigation_icon::before{
+    top: 5%;
+    left: 8%;
+    transform: rotate(45deg);
+    position: fixed;
+    
+} 
+
+.navigation_checkbox:checked ~ .navigation_btn .navigation_icon::after{
+    top: 5%;
+    left: 8%;
+    transform: rotate(-45deg);
+    position: fixed;
+    
+} 
+

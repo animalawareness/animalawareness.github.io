@@ -1,0 +1,71 @@
+div .t-text{
+    color:#2F8B43;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 2%;
+    font-family: 'Heebo', sans-serif;
+}
+
+div p{
+    color: rgba(255, 255, 255, 0.7);
+    text-align: justify;
+    font-size: 25px;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: 'Heebo', sans-serif;
+}
+
+div .learnmore{
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    font-size: 15px;
+    margin-top: 3%;
+    font-family: 'Heebo', sans-serif;
+}
+
+
+div .endangered{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 1%;
+    font-family: 'Heebo', sans-serif;
+} 
+
+div .endangered a{
+    color: #2F8B43;
+    text-decoration: none;
+}
+
+.endangered a:hover{
+    color: white;
+}
+
+@media (max-width:768px){
+
+    div .t-text {
+        font-size:calc(25px );
+    }
+
+    div p {
+        font-size:calc(20px );
+    }
+
+    div .learnmore {
+        font-size:calc(15px );
+    }
+
+    div .endangered {
+        font-size:calc(25px );
+    }
+
+
+}
+
+
+
+
+
+
+
+

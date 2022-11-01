@@ -1,0 +1,66 @@
+
+.container4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* height: 1000px; */
+    width: 100%;
+    font-family: 'Heebo', sans-serif;
+    
+  }
+  .container4 .text {
+    font-size: 100px;
+    margin-top: 5%;
+  }
+
+  .container4 .longt {
+    font-size: 150px;
+  
+  }
+  .container4 .text span{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-right: 30px;
+  }
+
+  
+  .text > a {
+    background: linear-gradient(
+      to right,
+      #2F8B43 50%,
+      rgb(37, 37, 37) 50%
+    );
+    background-size: 200% 100%;
+    background-position-x: 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-bottom: -250px;
+    margin-top: 4%;
+    margin-left: 10%;
+  }
+
+
+ a:hover{
+    color: white;
+    text-decoration: none;
+  }
+
+  /* code for font-size of endangered text */
+  @media (max-width:798px){
+    .container4 .text {
+        font-size:calc(40px);
+    }
+
+    .container4 .text span {
+      font-size:calc(.7rem);
+  }
+
+  .container4 .longt {
+    font-size:calc(2rem);
+}
+  }
+
+
+
+  
